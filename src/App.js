@@ -25,7 +25,7 @@ function App() {
     <div className="body">
       <div>
         <nav className="navbar navbar-expand-md navbar-dark mb-4 justify-content-center bcdNav">
-          <a className="navbar-brand text-align-center" href="#search">
+          <a className="navbar-brand text-align-center txtPrev" href="#search">
             Previsão do tempo
           </a>
         </nav>
@@ -37,12 +37,12 @@ function App() {
           <p className="lead">
             Digite uma cidade, estado ou país. <br></br> Após isto clique em pesquisar para visualizar os resultados
           </p>
-          <div className="row mb-4">
+          <div className="row mb-4 justify-content-center">
             <div class="col-md-6">
               <input type="text" class="form-control" value={city} onChange={(e) => setCity(e.target.value)}/>
             </div>
           </div>
-          <button className="btn btn-lg btn-primary" onClick={handleSearch}>
+          <button className="btn btn-lg btnBcd" onClick={handleSearch}>
             Pesquisar
           </button>
 
@@ -84,7 +84,7 @@ function App() {
         </div>
       </main>
       <footer>
-        <p className=" d-flex justify-content-center">
+        <p className="d-flex justify-content-center txtFooter">
           Desenvolvido por: Lucas Souza
         </p>
       </footer>
