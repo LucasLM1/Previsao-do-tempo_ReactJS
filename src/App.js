@@ -48,8 +48,8 @@ function App() {
 
           {weatherForecast ? (
             <>
-              <div className="mt-4 d-flex align-items-center">
-                <div className="col-sm-1"> {/* Foto do céu */}
+              <div className="mt-4 d-flex justify-content-center text-align-center">
+                <div className="col-sm-1 mt-0"> {/* Foto do céu */}
                   <img
                     src={`${weatherForecast.current.condition.icon}`}
                     alt="Weather Icon"
@@ -60,7 +60,7 @@ function App() {
                   {weatherForecast.location.name}{/* Cidade */}
                 </h3>
                 </div>
-                <div className="mr-2">
+                <div className="mr-2 mt-1">
                   <h5>|</h5>
                 </div>
                 <div>
@@ -68,7 +68,7 @@ function App() {
                     {weatherForecast.current.condition.text} {/* Condição climática */}
                   </h3>
                 </div>
-                <div className="d-flex row mt-3 ml-3">
+                <div className="d-flex mt-1 row ml-3">
                 <h5 className="mr-2">|</h5>
                 <p className="mr-2">
                     Temperatura em Celcius: {weatherForecast.current.temp_c}ºC
