@@ -1,6 +1,8 @@
 body{
-    background-image: linear-gradient(210deg, #29b4df, #f07a19);
+    background-image: url(https://a-static.besthdwallpaper.com/o-ceu-azul-bonito-papel-de-parede-1280x720-11038_45.jpg);
     height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .bcdNav{
     background-image: linear-gradient(#29b4df, #02020200);
@@ -12,22 +14,28 @@ body{
 
 .btnBcd{
     background-color: #3fb7dbc7;
+    border-radius: 14px;
 }
 .btnBcd:hover{
     background-color: #00c3ff;
 }
 
+.border{
+    border-radius: 14px;
+}
+
 .jumbotron{
     text-align: center;
-    background-color: #02020262;
+    background-color: #0202025e;
     color: white;
+    border-radius: 20px;
 }
 .txtInput{
     text-align: center;
 }
 
 .txtFooter{
-    color:#fff;
-    font-size: 20px;
+    color:#000;
+    font-size: 25px;
     margin-top:45px;
 }

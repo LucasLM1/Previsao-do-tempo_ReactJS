@@ -38,8 +38,8 @@ function App() {
             Digite uma cidade, estado ou país. <br></br> Após isto clique em pesquisar para visualizar os resultados
           </p>
           <div className="row mb-4 justify-content-center">
-            <div class="col-md-6">
-              <input type="text" class="form-control" value={city} onChange={(e) => setCity(e.target.value)}/>
+            <div className="col-md-6">
+              <input type="text" className="form-control border" value={city} onChange={(e) => setCity(e.target.value)} />
             </div>
           </div>
           <button className="btn btn-lg btnBcd" onClick={handleSearch}>
@@ -56,9 +56,9 @@ function App() {
                   />
                 </div>
                 <div className="mr-2">
-                <h3>
-                  {weatherForecast.location.name}{/* Cidade */}
-                </h3>
+                  <h3>
+                    {weatherForecast.location.name}{/* Cidade */}
+                  </h3>
                 </div>
                 <div className="mr-2 mt-1">
                   <h5>|</h5>
@@ -69,14 +69,14 @@ function App() {
                   </h3>
                 </div>
                 <div className="d-flex mt-1 row ml-3">
-                <h5 className="mr-2">|</h5>
-                <p className="mr-2">
+                  <h5 className="mr-2">|</h5>
+                  <p className="mr-2">
                     Temperatura em Celcius: {weatherForecast.current.temp_c}ºC
-                </p>
-                <h5 className="mr-2">|</h5>
-                <p>
-                  Temperatura em Farenheit: {weatherForecast.current.temp_f}ºF
-                </p>
+                  </p>
+                  <h5 className="mr-2">|</h5>
+                  <p>
+                    Temperatura em Farenheit: {weatherForecast.current.temp_f}ºF
+                  </p>
                 </div>
               </div>
             </>
@@ -85,7 +85,7 @@ function App() {
       </main>
       <footer>
         <p className="d-flex justify-content-center txtFooter">
-          Desenvolvido por: Lucas Souza
+          Desenvolvido por Lucas Souza
         </p>
       </footer>
     </div>
